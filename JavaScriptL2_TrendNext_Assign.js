@@ -46,6 +46,7 @@ console.log(convertTemp(fahrenheitData, false));
 
 
 // Topic 3: JavaScript Math
+
 // Assignment 1: Write a JavaScript function to format a number up to specified decimal places.
 
 function formatDecimal(num, decimalPlaces) {
@@ -68,6 +69,7 @@ console.log(randomUtils());
 
 
 // Topic 4: JavaScript Dates
+
 // Assignment 1: Write a JavaScript function to test whether a date is a weekend or not.
 
 function isWeekend(date) {
@@ -97,6 +99,7 @@ console.log(daysPassed());
 
 
 // Topic 5: JavaScript Arrays
+
 // Assignment 1: Write a JavaScript program to remove duplicate items from String type array (ignore case sensitivity).
 
 let array = ['dog', 'cat', 1, 'dog', 3, 1, 4, 'cat'];
@@ -123,7 +126,9 @@ let unsoetedArray = [1, 39, 20, 10, 50];
 // 20
 console.log(largestElement(unsoetedArray, 3));
 
+
 // Topic 6: JavaScript Booleans & Type Of
+
 // Assignment 2: Write a JavaScript function to check greatest of two numbers by using Boolean() function.
 
 function largestNumber(num1, num2) {
@@ -138,6 +143,7 @@ console.log(largestNumber(5,10));
 
 
 // Topic 7: JavaScript Type Conversion
+
 // Assignment 2: Write a JavaScript function to convert given number to a string object and display.
 
 function convertToString(num) {
@@ -147,6 +153,7 @@ function convertToString(num) {
 console.log(convertToString(123));
 
 // Topic 8: JavaScript Regular Expressions
+
 // Assignment 2: Write a JavaScript function to check whether a given value is a valid url or not.
 
 function urlValidation(url) {
@@ -167,40 +174,42 @@ const url2 = 'avbahsjojoppo'
 console.log(urlValidation(url1))
 console.log(urlValidation(url2))
 
+
 // Topic 9: JavaScript Form Validation
+
 // Assignment 2: Write a JavaScript program to create a form with a text field to accept pin code. Write a pattern that validates pin code.
 
-// <!DOCTYPE html>
-// <html>
-// <head>
-// <script>
-// function validatePinCode() {
-//   let pin = document.forms["myForm"]["pin_code"].value;
-//   let pattern =/^([0-9](6,6)+$/;
-//   if (!pattern.test(pin)) {
-//     alert("Pincode not correct");
-//     return false;
-//   }
-// }
-// </script>
-// </head>
-// <body>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validatePinCode() {
+  let pin = document.forms["myForm"]["pin_code"].value;
+  let pattern =/^([0-9](6,6)+$/;
+  if (!pattern.test(pin)) {
+    alert("Pincode not correct");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
 
-// <form name="myForm"onsubmit="validatePinCode()" 
+<form name="myForm"onsubmit="validatePinCode()" 
 
-// method="post">
-//   Pin Code: <input type="text" name="pin_code">
-//   <input type="submit" value="Submit">
-// </form>
+method="post">
+  Pin Code: <input type="text" name="pin_code">
+  <input type="submit" value="Submit">
+</form>
 
-// </body>
-// </html>
+</body>
+</html>
 
 
 // Topic 10: JavaScript HTML DOM
+
 // Assignment 1: Write a JavaScript program to get the width and height of the window (any time the window is resized).
 
-/*
 <head>
 <meta charset=utf-8 />
 <title>Window Size : height and width</title>
@@ -211,7 +220,7 @@ console.log(urlValidation(url2))
 </div>
 <body>
 </body>
-*/ 
+
 
 function getSize()
 {
@@ -231,31 +240,32 @@ function setBackground() {
 
 
 // Topic 11: JavaScript Browser BOM
+
 // Assignment 1: Create a basic page in html with an image in it. When the user clicks on the image, open a new
 // tab or window that displays the Google home page. Add a form button beneath the image
 // labelled 'Close'. When the button is clicked, the new tab or window should close.
 
-// <!DOCTYPE html>
-// <html>
-// <body>
+<!DOCTYPE html>
+<html>
+<body>
 
-// <h2>HTML Image</h2>
-// <img src="image.png" width="400" height="400" onclick="openWin()">
-// <button onclick="closeWin()">Close</button>
+<h2>HTML Image</h2>
+<img src="image.png" width="400" height="400" onclick="openWin()">
+<button onclick="closeWin()">Close</button>
 
-// <script>
-// var myWindow;
+<script>
+var myWindow;
 
-// function openWin() {
-//   myWindow = window.open("www.google.com", "", "width=500,height=500");
-// }
+function openWin() {
+  myWindow = window.open("www.google.com", "", "width=500,height=500");
+}
 
-// function closeWin() {
-//   myWindow.close();
-// }
-// </script>
-// </body>
-// </html>
+function closeWin() {
+  myWindow.close();
+}
+</script>
+</body>
+</html>
 
 
 
